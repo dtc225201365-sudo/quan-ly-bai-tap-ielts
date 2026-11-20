@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Chuẩn hóa nút bấm và touch target */
+button {
+  touch-action: manipulation;
+}
+
+/* Loại bỏ hoàn toàn outline focus mặc định gắt chói, dùng focus-ring thanh lịch */
+:focus-visible {
+  outline: 2px solid #0f172a;
+  outline-offset: 2px;
+}
